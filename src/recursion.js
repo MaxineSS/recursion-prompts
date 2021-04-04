@@ -31,8 +31,7 @@ var sum = function(array) {
 // 3. Sum all numbers in an array containing nested arrays.
 // arraySum([1,[2,3],[[4]],5]); // 15
 var arraySum = function(array) {
-	var result = [];
-	result = result.concat(makeflat(array));
+	var result = makeflat(array);
 
 	var sum = 0;
 	if (result.length === 0) {
